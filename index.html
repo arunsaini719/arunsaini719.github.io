@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Arun Saini is a backend-focused Senior Software Engineer working with Elixir, Phoenix, Ruby on Rails, and PostgreSQL."
+    />
+    <meta name="theme-color" content="#102a43" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:title" content="Arun Saini — Senior Software Engineer" />
+    <meta
+      property="og:description"
+      content="Reliable backend systems for payments, business workflows, integrations, and multi-tenant SaaS products."
+    />
+    <meta property="og:type" content="website" />
+    <title>Arun Saini — Senior Software Engineer</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.replace("no-js", "js");
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#top">
+          <span class="brand-mark" aria-hidden="true">AS</span>
+          <span>Arun Saini</span>
+        </a>
+        <button
+          class="menu-button"
+          type="button"
+          aria-expanded="false"
+          aria-controls="site-nav"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span><span></span><span></span>
+        </button>
+        <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+          <a href="#work">Selected work</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+          <a
+            class="nav-pill"
+            href="https://www.linkedin.com/in/arun-saini-dev/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section id="top" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Senior Software Engineer · Backend systems</p>
+            <h1>
+              I build reliable software for workflows that cannot afford to
+              drift.
+            </h1>
+            <p class="hero-intro">
+              Backend-heavy engineering for SaaS products involving payments,
+              multi-step business processes, integrations, background jobs, and
+              PostgreSQL consistency.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#work"
+                >View selected work</a
+              >
+              <a class="button button-secondary" href="#contact">Contact me</a>
+            </div>
+            <p class="availability">
+              <span aria-hidden="true"></span> Based in India · Experienced with
+              US Eastern collaboration
+            </p>
+          </div>
+
+          <aside class="focus-panel" aria-label="Engineering focus">
+            <p class="panel-label">Engineering focus</p>
+            <ul>
+              <li>
+                <span>01</span
+                ><strong>Payment and subscription reliability</strong>
+              </li>
+              <li>
+                <span>02</span><strong>Concurrent business workflows</strong>
+              </li>
+              <li>
+                <span>03</span
+                ><strong>Multi-tenant platforms and authorization</strong>
+              </li>
+              <li>
+                <span>04</span
+                ><strong>Safe evolution of mature products</strong>
+              </li>
+            </ul>
+            <div class="stack-line">Elixir · Phoenix · Rails · PostgreSQL</div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="capabilities section">
+        <div class="container">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">What I work on</p>
+            <h2>
+              Complex backend features, delivered with production constraints in
+              mind.
+            </h2>
+          </div>
+          <div class="capability-grid">
+            <article>
+              <p class="card-number">01</p>
+              <h3>Payments and financial consistency</h3>
+              <p>
+                State transitions, retries, webhook races, participant-level
+                validation, auditing, and reconciliation-friendly records.
+              </p>
+            </article>
+            <article>
+              <p class="card-number">02</p>
+              <h3>Business workflows and concurrency</h3>
+              <p>
+                Explicit lifecycle models, database constraints, locking,
+                background work, and actionable exceptional outcomes.
+              </p>
+            </article>
+            <article>
+              <p class="card-number">03</p>
+              <h3>Multi-tenant SaaS foundations</h3>
+              <p>
+                Identity, roles, product access, authorization, secure
+                administration, integrations, and safe data migration.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="work" class="work section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Selected work</p>
+            <h2>
+              Production problems solved with explicit state, strong boundaries,
+              and careful ownership.
+            </h2>
+            <p>
+              These case studies are anonymized to protect client and product
+              confidentiality.
+            </p>
+          </div>
+
+          <article class="case-study">
+            <div class="case-summary">
+              <div>
+                <p class="case-index">Case study 01</p>
+                <h3>
+                  Concurrency-safe deposits in a multi-party booking workflow
+                </h3>
+              </div>
+              <p class="case-lead">
+                Preventing duplicate bookings and inconsistent payment outcomes
+                while replacing a mature operations product.
+              </p>
+            </div>
+            <ul class="case-meta" aria-label="Technologies">
+              <li>Elixir</li>
+              <li>Phoenix LiveView</li>
+              <li>PostgreSQL</li>
+              <li>Ecto</li>
+              <li>Stripe</li>
+              <li>Oban</li>
+            </ul>
+            <div class="case-columns">
+              <div>
+                <h4>Context and challenge</h4>
+                <p>
+                  A mature Rails back-office product was being replaced with a
+                  Phoenix/LiveView application for direct collaboration between
+                  service buyers and suppliers. Deposit-backed bookings
+                  introduced retries, browser/webhook concurrency, changing
+                  proposal availability, and the risk of payment diverging from
+                  booking confirmation.
+                </p>
+              </div>
+              <div>
+                <h4>My contribution</h4>
+                <p>
+                  I substantially contributed to the proposal and booking
+                  domains, authorization, LiveView workflows, tests, and
+                  validation-first tenant migration tooling. For deposit-backed
+                  bookings, I implemented the pending state, database uniqueness
+                  and duplicate recovery, amount-safe draft reuse, row locking,
+                  atomic local transitions, and explicit stale or conflict
+                  outcomes.
+                </p>
+              </div>
+            </div>
+            <div class="case-result">
+              <span>Result</span>
+              <p>
+                Duplicate requests could not create multiple pending bookings.
+                Competing completion paths serialized against the same booking,
+                and abandoned attempts could resume without charging an outdated
+                amount.
+              </p>
+            </div>
+            <details>
+              <summary>Read implementation perspective</summary>
+              <div class="details-body">
+                <p>
+                  The workflow represented waiting for a deposit explicitly
+                  instead of confirming prematurely. Within the wider team
+                  implementation, browser and webhook completion converged on
+                  one finalization workflow, avoiding separate business rules
+                  for synchronous and asynchronous completion.
+                </p>
+                <p>
+                  The broader replacement gave buyers and suppliers a simpler
+                  shared workflow while preserving continuity for selected
+                  tenants migrated from the previous application.
+                </p>
+                <p>
+                  <strong>Engineering perspective:</strong> model intermediate
+                  states explicitly, enforce invariants in PostgreSQL, use locks
+                  where concurrent actors converge, keep local transitions
+                  atomic, and make exceptional outcomes visible.
+                </p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case-study">
+            <div class="case-summary">
+              <div>
+                <p class="case-index">Case study 02</p>
+                <h3>
+                  Improving financial consistency in a Stripe payment system
+                </h3>
+              </div>
+              <p class="case-lead">
+                Keeping participant-level balances and local charge state
+                correct across retries and asynchronous updates.
+              </p>
+            </div>
+            <ul class="case-meta" aria-label="Technologies">
+              <li>Elixir</li>
+              <li>Phoenix</li>
+              <li>PostgreSQL</li>
+              <li>Ecto</li>
+              <li>Stripe Connect</li>
+              <li>Auditing</li>
+            </ul>
+            <div class="case-columns">
+              <div>
+                <h4>Context and challenge</h4>
+                <p>
+                  A multi-tenant SaaS platform collected configurable
+                  installment payments. A single payment could cover multiple
+                  participants with separate balances, packages, fees,
+                  discounts, and deposit requirements. Aggregate validation
+                  could hide an individual overpayment, while request and
+                  webhook paths could race to update one charge.
+                </p>
+              </div>
+              <div>
+                <h4>My contribution</h4>
+                <p>
+                  I implemented or substantially modified local charge creation
+                  with participant-level lines, explicit statuses and allowed
+                  transitions, row locking for request/webhook races,
+                  participant-level overpayment and deposit validation, and
+                  audited financial writes.
+                </p>
+              </div>
+            </div>
+            <div class="case-result">
+              <span>Result</span>
+              <p>
+                Fewer balance and overpayment problems, fewer
+                race-condition-related production errors, easier investigation
+                and reconciliation, and better traceability for support staff.
+              </p>
+            </div>
+            <details>
+              <summary>Read implementation perspective</summary>
+              <div class="details-body">
+                <p>
+                  The wider team implementation also used application and
+                  provider idempotency, timeout recovery, asynchronous webhook
+                  handling, and method-specific payment states. My work ensured
+                  those paths converged on guarded, auditable local financial
+                  records.
+                </p>
+                <p>
+                  <strong>Engineering perspective:</strong> payment reliability
+                  requires precise local accounting, explicit state transitions,
+                  concurrency control, auditability, and validation at the level
+                  where funds are allocated.
+                </p>
+              </div>
+            </details>
+          </article>
+
+          <article class="case-study">
+            <div class="case-summary">
+              <div>
+                <p class="case-index">Case study 03</p>
+                <h3>Centralizing identity across multiple SaaS applications</h3>
+              </div>
+              <p class="case-lead">
+                Replacing duplicated per-product onboarding with one secure,
+                auditable administrative control plane.
+              </p>
+            </div>
+            <ul class="case-meta" aria-label="Technologies">
+              <li>Elixir</li>
+              <li>Phoenix LiveView</li>
+              <li>PostgreSQL</li>
+              <li>Oban</li>
+              <li>TOTP</li>
+              <li>HMAC</li>
+              <li>Terraform</li>
+            </ul>
+            <div class="case-columns">
+              <div>
+                <h4>Context and challenge</h4>
+                <p>
+                  Tenant and user onboarding happened separately inside multiple
+                  SaaS products. The new control plane needed multi-tenant
+                  membership, role-aware product access, secure support,
+                  auditable impersonation, privileged authentication, and
+                  reliable synchronization with downstream applications.
+                </p>
+              </div>
+              <div>
+                <h4>My contribution</h4>
+                <p>
+                  I worked across identity and membership modeling, invitations,
+                  scoped authorization, audited impersonation, TOTP recovery,
+                  LiveView administration, signed downstream webhooks, Oban
+                  retries and stale-update protection, Terraform previews, and
+                  security-focused CI.
+                </p>
+              </div>
+            </div>
+            <div class="case-result">
+              <span>Result</span>
+              <p>
+                Onboarding and access administration moved into one application,
+                noticeably simplifying the process while establishing explicit
+                identity, tenant, and product-access boundaries.
+              </p>
+            </div>
+            <details>
+              <summary>Read implementation perspective</summary>
+              <div class="details-body">
+                <p>
+                  Asynchronous synchronization allowed administrative writes to
+                  succeed even when downstream products were unavailable. Queued
+                  updates could detect and cancel stale delivery attempts before
+                  overwriting newer state.
+                </p>
+                <p>
+                  <strong>Engineering perspective:</strong> centralized identity
+                  requires more than a shared users table—it needs separated
+                  actor identities, explicit authorization scopes, auditable
+                  privileged access, secure event delivery, and a strategy for
+                  eventual consistency.
+                </p>
+              </div>
+            </details>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="container about-grid">
+          <div class="section-heading">
+            <p class="eyebrow">About</p>
+            <h2>
+              Backend depth with enough product breadth to own the whole
+              feature.
+            </h2>
+          </div>
+          <div class="about-copy">
+            <p>
+              I’m a backend-heavy Senior Software Engineer and hands-on Team
+              Lead with 8 years of experience building and evolving production
+              SaaS products with internal stakeholders and international client
+              teams.
+            </p>
+            <p>
+              I work directly with product teams, turn ambiguous requirements
+              into practical technical designs, review other engineers’ work,
+              and remain hands-on through implementation and testing. I’m
+              particularly comfortable evolving mature systems where
+              reliability, data integrity, and operational continuity matter.
+            </p>
+            <div class="technology-groups">
+              <div>
+                <span>Core</span>
+                <p>Elixir, Phoenix, LiveView, Ruby on Rails, PostgreSQL</p>
+              </div>
+              <div>
+                <span>Systems</span>
+                <p>Oban, Kafka, Broadway, ClickHouse, Redis, MongoDB</p>
+              </div>
+              <div>
+                <span>Product breadth</span>
+                <p>React, TypeScript, REST, GraphQL, Stripe, Terraform</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div class="container contact-card">
+          <p class="eyebrow">Let’s talk</p>
+          <h2>
+            Working on a difficult Rails, Phoenix, PostgreSQL, or SaaS platform
+            problem?
+          </h2>
+          <p>
+            I’m open to conversations about senior engineering roles and
+            carefully scoped product work.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-light" href="mailto:arunsaini719@gmail.com"
+              >Email me</a
+            >
+            <a
+              class="text-link light-link"
+              href="https://www.linkedin.com/in/arun-saini-dev/"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Connect on LinkedIn <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Arun Saini</p>
+        <p>Built as a lightweight, accessible static site.</p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
