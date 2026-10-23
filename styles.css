@@ -503,6 +503,21 @@ summary:hover {
 .about .section-heading {
   margin: 0;
 }
+.about-portrait {
+  width: min(260px, 78%);
+  margin: 34px 0 0;
+  padding: 7px;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 22px;
+  box-shadow: 0 16px 38px rgba(11, 31, 51, 0.13);
+}
+.about-portrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
 .about-copy > p {
   margin: 0 0 20px;
   color: #465563;
@@ -747,6 +762,9 @@ summary:focus-visible {
   .technology-groups div {
     grid-template-columns: 1fr;
     gap: 5px;
+  }
+  .about-portrait {
+    width: min(220px, 65%);
   }
   .contact {
     padding-top: 0;
